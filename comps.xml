@@ -555,17 +555,6 @@
 		</packagelist>
 	</group>
 	<group> 
-		<id>design-suite</id>
-		<name>Design Suite</_name>
-		<description>These packages are targeted towards professional designers, and are related to graphics, web and animation.</description>
-		<default>false</default>
-		<uservisible>true</uservisible>
-		<packagelist>
-			<packagereq type="mandatory">gimp</packagereq>
-			<packagereq type="mandatory">inkscape</packagereq>
-		</packagelist>
-	</group>
-	<group> 
 		<id>xfce</id>
 		<name>Xfce</_name>
 		<description>A lightweight desktop environment that works well on low end machines.</description>
