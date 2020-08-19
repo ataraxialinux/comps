@@ -106,6 +106,9 @@
 			<packagereq type="mandatory">xz</packagereq>
 			<packagereq type="mandatory">zlib</packagereq>
 			<packagereq type="mandatory">zstd</packagereq>
+			<packagereq type="mandatory" arch="x86_64">efibootmgr</packagereq>
+			<packagereq type="mandatory" arch="i686">efibootmgr</packagereq>
+			<packagereq type="mandatory" arch="aarch64">efibootmgr</packagereq>
 			<packagereq type="mandatory" arch="x86_64">grub</packagereq>
 			<packagereq type="mandatory" arch="i686">grub</packagereq>
 			<packagereq type="mandatory" arch="aarch64">grub</packagereq>
@@ -561,8 +564,38 @@
 		<default>false</default>
 		<uservisible>true</uservisible>
 		<packagelist>
-			<packagereq type="mandatory">gimp</packagereq>
-			<packagereq type="mandatory">inkscape</packagereq>
+			<packagereq type="mandatory">libxfce4util</packagereq>
+			<packagereq type="mandatory">xfconf</packagereq>
+			<packagereq type="mandatory">libxfce4ui</packagereq>
+			<packagereq type="mandatory">exo</packagereq>
+			<packagereq type="mandatory">garcon</packagereq>
+			<packagereq type="mandatory">xfce4-panel</packagereq>
+			<packagereq type="mandatory">thunar</packagereq>
+			<packagereq type="mandatory">thunar-volman</packagereq>
+			<packagereq type="mandatory">tumbler</packagereq>
+			<packagereq type="mandatory">xfce4-appfinder</packagereq>
+			<packagereq type="mandatory">xfce4-power-manager</packagereq>
+			<packagereq type="mandatory">xfce4-settings</packagereq>
+			<packagereq type="mandatory">xfdesktop</packagereq>
+			<packagereq type="mandatory">xfwm4</packagereq>
+			<packagereq type="mandatory">xfce4-session</packagereq>
+			<packagereq type="mandatory">polkit-gnome</packagereq>
+			<packagereq type="mandatory">xdg-user-dirs</packagereq>
+			<packagereq type="default">gvfs</packagereq>
+			<packagereq type="default">mousepad</packagereq>
+			<packagereq type="default">parole</packagereq>
+			<packagereq type="default">ristretto</packagereq>
+			<packagereq type="default">xfburn</packagereq>
+			<packagereq type="default">xfce4-notifyd</packagereq>
+			<packagereq type="default">xfce4-terminal</packagereq>
+			<packagereq type="optional">catfish</packagereq>
+			<packagereq type="optional">xfce4-alsa-plugin</packagereq>
+			<packagereq type="optional">xfce4-battery-plugin</packagereq>
+			<packagereq type="optional">xfce4-clipman-plugin</packagereq>
+			<packagereq type="optional">xfce4-dev-tools</packagereq>
+			<packagereq type="optional">xfce4-weather-plugin</packagereq>
+			<packagereq type="optional">xfce4-whiskermenu-plugin</packagereq>
+			<packagereq type="optional">xfce4-xkb-plugin</packagereq>
 		</packagelist>
 	</group>
 </comps>
