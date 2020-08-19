@@ -226,7 +226,7 @@
 	</group>
 	<group>
 		<id>base-x</id>
-		<name>base-x</name>
+		<name>X Window System</name>
 		<description>Local X.org display server</description>
 		<default>false</default>
 		<uservisible>false</uservisible>
