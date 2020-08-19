@@ -187,7 +187,7 @@
 		<name>Basic Web Server</name>
 		<description>These tools allow you to run a Web server on the system.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">apache</packagereq>
 			<packagereq type="mandatory">h2o</packagereq>
@@ -204,7 +204,7 @@
 		<name>Databases for server</name>
 		<description>These tools allow you to run a database on your server.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">mariadb</packagereq>
 			<packagereq type="mandatory">postgresql</packagereq>
@@ -216,7 +216,7 @@
 		<name>DNS server</name>
 		<description>These tools allow you to run a DNS servers on your system.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">bind</packagereq>
 			<packagereq type="mandatory">nsd</packagereq>
@@ -229,7 +229,7 @@
 		<name>base-x</name>
 		<description>Local X.org display server</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">xf86-input-libinput</packagereq>
 			<packagereq type="mandatory">xf86-video-amdgpu</packagereq>
@@ -264,7 +264,7 @@
 		<name>Window Managers</name>
 		<description>Simple window managers that aren't part of a larger desktop environment.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">bspwm</packagereq>
 			<packagereq type="mandatory">conky</packagereq>
@@ -295,7 +295,7 @@
 		<name>Window Managers for Wayland</name>
 		<description>Simple window managers that aren't part of a larger desktop environment.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">grim</packagereq>
 			<packagereq type="mandatory">sway</packagereq>
@@ -526,7 +526,7 @@
 		<name>GNOME</name>
 		<description>GNOME is a highly intuitive and user friendly desktop environment.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">gnome-control-center</packagereq>
 			<packagereq type="mandatory">gnome-keyring</packagereq>
@@ -597,7 +597,7 @@
 		<name>Xfce</name>
 		<description>A lightweight desktop environment that works well on low end machines.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">libxfce4util</packagereq>
 			<packagereq type="mandatory">xfconf</packagereq>
@@ -639,7 +639,7 @@
 		<name>MATE</name>
 		<description>MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">caja</packagereq>
 			<packagereq type="mandatory">marco</packagereq>
