@@ -441,7 +441,7 @@
 	</group>
 	<group> 
 		<id>design-suite</id>
-		<name>Design Suite</_name>
+		<name>Design Suite</name>
 		<description>These packages are targeted towards professional designers, and are related to graphics, web and animation.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -452,7 +452,7 @@
 	</group>
 	<group> 
 		<id>printing</id>
-		<name>Printing Support</_name>
+		<name>Printing Support</name>
 		<description>Install these tools to enable the system to print or act as a print server.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -466,7 +466,7 @@
 	</group>
 	<group> 
 		<id>fonts</id>
-		<name>Fonts</_name>
+		<name>Fonts</name>
 		<description>Fonts packages for rendering text on the desktop.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -487,7 +487,7 @@
 	</group>
 	<group>
 		<id>japanese-support</id>
-		<name>Japanese Support</_name>
+		<name>Japanese Support</name>
 		<description>This group includes packages for Japanese language support.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -501,7 +501,7 @@
 	</group>
 	<group>
 		<id>korean-support</id>
-		<name>Korean Support</_name>
+		<name>Korean Support</name>
 		<description>This group includes packages for Korean language support.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -512,7 +512,7 @@
 	</group>
 	<group>
 		<id>vietnamese-support</id>
-		<name>Vietnamese Support</_name>
+		<name>Vietnamese Support</name>
 		<description>This group includes packages for Vietnamese language support.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -523,7 +523,7 @@
 	</group>
 	<group>
 		<id>gnome-desktop</id>
-		<name>GNOME</_name>
+		<name>GNOME</name>
 		<description>GNOME is a highly intuitive and user friendly desktop environment.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -594,7 +594,7 @@
 	</group>
 	<group> 
 		<id>xfce</id>
-		<name>Xfce</_name>
+		<name>Xfce</name>
 		<description>A lightweight desktop environment that works well on low end machines.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -636,7 +636,7 @@
 	</group>
 	<group> 
 		<id>mate-desktop</id>
-		<name>MATE</_name>
+		<name>MATE</name>
 		<description>MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.</description>
 		<default>false</default>
 		<uservisible>true</uservisible>
@@ -657,7 +657,7 @@
 	</group>
 	<group> 
 		<id>suckless-desktop</id>
-		<name>Suckless</_name>
+		<name>Suckless</name>
 		<description>Minimal DWM desktop, no bloat.</description>
 		<default>false</default>
 		<uservisible>false</uservisible>
@@ -669,7 +669,7 @@
 	</group>
 	<environment>
 		<id>minimal-environment</id>
-		<name>Minimal Install</_name>
+		<name>Minimal Install</name>
 		<description>Basic functionality.</description>
 		<display_order>1</display_order>
 		<grouplist>
@@ -682,7 +682,7 @@
 	</environment>
 	<environment>
 		<id>gnome-environment</id>
-		<name>GNOME Desktop</_name>
+		<name>GNOME Desktop</name>
 		<description>A userfriendly environment for computers.</description>
 		<display_order>2</display_order>
 		<grouplist>
@@ -704,7 +704,7 @@
 	</environment>
 	<environment>
 		<id>xfce-environment</id>
-		<name>Xfce Desktop</_name>
+		<name>Xfce Desktop</name>
 		<description>A lightweight desktop environment that works well on low end machines.</description>
 		<display_order>3</display_order>
 		<grouplist>
@@ -726,7 +726,7 @@
 	</environment>
 	<environment>
 		<id>mate-environment</id>
-		<name>MATE Desktop</_name>
+		<name>MATE Desktop</name>
 		<description>MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.</description>
 		<display_order>4</display_order>
 		<grouplist>
@@ -748,7 +748,7 @@
 	</environment>
 	<environment>
 		<id>suckless-environment</id>
-		<name>Suckless Desktop</_name>
+		<name>Suckless Desktop</name>
 		<description>Minimal DWM desktop, no bloat.</description>
 		<display_order>5</display_order>
 		<grouplist>
@@ -762,7 +762,7 @@
 	</environment>
 	<environment>
 		<id>server-environment</id>
-		<name>Server</_name>
+		<name>Server</name>
 		<description>An integrated environment for managing servers.</description>
 		<display_order>6</display_order>
 		<grouplist>
@@ -790,7 +790,7 @@
 	</environment>
 	<environment>
 		<id>security-environment</id>
-		<name>Security Lab</_name>
+		<name>Security Lab</name>
 		<description>Tools for security auditing, forensics, system rescue, and teaching security testing methodologies.</description>
 		<display_order>7</display_order>
 		<grouplist>
