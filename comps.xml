@@ -6,7 +6,7 @@
 		<name>Core</name>
 		<description>Smallest possible installation</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">9base</packagereq>
 			<packagereq type="mandatory">acl</packagereq>
@@ -122,7 +122,7 @@
 		<name>Standard</name>
 		<description>Extended but still small possible installation</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="mandatory">cronie</packagereq>
 			<packagereq type="mandatory">cryptsetup</packagereq>
@@ -328,7 +328,7 @@
 		<name>Security Lab</name>
 		<description>Tools for security auditing, forensics, system rescue, and teaching security testing methodologies.</description>
 		<default>false</default>
-		<uservisible>true</uservisible>
+		<uservisible>false</uservisible>
 		<packagelist>
 			<packagereq type="default">aircrack-ng</packagereq>
 			<packagereq type="default">ddrescue</packagereq>
@@ -439,6 +439,52 @@
 			<packagereq type="mandatory">yasm</packagereq>
 		</packagelist>
 	</group>
+	<group> 
+		<id>design-suite</id>
+		<name>Design Suite</_name>
+		<description>These packages are targeted towards professional designers, and are related to graphics, web and animation.</description>
+		<default>false</default>
+		<uservisible>true</uservisible>
+		<packagelist>
+			<packagereq type="mandatory">gimp</packagereq>
+			<packagereq type="mandatory">inkscape</packagereq>
+		</packagelist>
+	</group>
+	<group> 
+		<id>printing</id>
+		<name>Printing Support</_name>
+		<description>Install these tools to enable the system to print or act as a print server.</description>
+		<default>false</default>
+		<uservisible>true</uservisible>
+		<packagelist>
+			<packagereq type="mandatory">cups</packagereq>
+			<packagereq type="mandatory">cups-pk-helper</packagereq>
+			<packagereq type="mandatory">ghostscript</packagereq>
+			<packagereq type="mandatory">samba</packagereq>
+			<packagereq type="mandatory">system-config-printer</packagereq>
+		</packagelist>
+	</group>
+	<group> 
+		<id>fonts</id>
+		<name>Fonts</_name>
+		<description>Fonts packages for rendering text on the desktop.</description>
+		<default>false</default>
+		<uservisible>true</uservisible>
+		<packagelist>
+			<packagereq type="mandatory">cantarell-fonts</packagereq>
+			<packagereq type="mandatory">font-adobe-source-code-pro-fonts</packagereq>
+			<packagereq type="mandatory">font-adobe-source-han-sans-hk-fonts</packagereq>
+			<packagereq type="mandatory">font-adobe-source-han-sans-jp-fonts</packagereq>
+			<packagereq type="mandatory">font-adobe-source-han-sans-kr-fonts</packagereq>
+			<packagereq type="mandatory">font-dejavu</packagereq>
+			<packagereq type="mandatory">font-hannom</packagereq>
+			<packagereq type="mandatory">font-noto</packagereq>
+			<packagereq type="mandatory">font-noto-cjk</packagereq>
+			<packagereq type="mandatory">font-noto-emoji</packagereq>
+			<packagereq type="mandatory">terminus-font</packagereq>
+			<packagereq type="mandatory">xorg-fonts</packagereq>
+		</packagelist>
+	</group>
 	<group>
 		<id>japanese-support</id>
 		<name>Japanese Support</_name>
@@ -473,17 +519,6 @@
 		<packagelist>
 			<packagereq type="mandatory">font-hannom</packagereq>
 			<packagereq type="mandatory">ibus-bamboo</packagereq>
-		</packagelist>
-	</group>
-	<group> 
-		<id>design-suite</id>
-		<name>Design Suite</_name>
-		<description>These packages are targeted towards professional designers, and are related to graphics, web and animation.</description>
-		<default>false</default>
-		<uservisible>true</uservisible>
-		<packagelist>
-			<packagereq type="mandatory">gimp</packagereq>
-			<packagereq type="mandatory">inkscape</packagereq>
 		</packagelist>
 	</group>
 	<group>
@@ -580,6 +615,7 @@
 			<packagereq type="mandatory">xfwm4</packagereq>
 			<packagereq type="mandatory">xfce4-session</packagereq>
 			<packagereq type="mandatory">polkit-gnome</packagereq>
+			<packagereq type="mandatory">st</packagereq>
 			<packagereq type="mandatory">xdg-user-dirs</packagereq>
 			<packagereq type="default">gvfs</packagereq>
 			<packagereq type="default">mousepad</packagereq>
@@ -598,4 +634,183 @@
 			<packagereq type="optional">xfce4-xkb-plugin</packagereq>
 		</packagelist>
 	</group>
+	<group> 
+		<id>mate-desktop</id>
+		<name>MATE</_name>
+		<description>MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.</description>
+		<default>false</default>
+		<uservisible>true</uservisible>
+		<packagelist>
+			<packagereq type="mandatory">caja</packagereq>
+			<packagereq type="mandatory">marco</packagereq>
+			<packagereq type="mandatory">mate-control-center</packagereq>
+			<packagereq type="mandatory">mate-notification-daemon</packagereq>
+			<packagereq type="mandatory">mate-panel</packagereq>
+			<packagereq type="mandatory">mate-polkit</packagereq>
+			<packagereq type="mandatory">mate-session-manager</packagereq>
+			<packagereq type="mandatory">mate-settings-daemon</packagereq>
+			<packagereq type="mandatory">mate-user-guide</packagereq>
+			<packagereq type="mandatory">st</packagereq>
+			<packagereq type="mandatory">xdg-user-dirs</packagereq>
+			<packagereq type="default">gvfs</packagereq>
+		</packagelist>
+	</group>
+	<group> 
+		<id>suckless-desktop</id>
+		<name>Suckless</_name>
+		<description>Minimal DWM desktop, no bloat.</description>
+		<default>false</default>
+		<uservisible>false</uservisible>
+		<packagelist>
+			<packagereq type="mandatory">dmenu</packagereq>
+			<packagereq type="mandatory">dwm</packagereq>
+			<packagereq type="mandatory">st</packagereq>
+		</packagelist>
+	</group>
+	<environment>
+		<id>minimal-environment</id>
+		<name>Minimal Install</_name>
+		<description>Basic functionality.</description>
+		<display_order>1</display_order>
+		<grouplist>
+			<groupid>core</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>development</groupid>
+			<groupid>standard</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>gnome-environment</id>
+		<name>GNOME Desktop</_name>
+		<description>A userfriendly environment for computers.</description>
+		<display_order>2</display_order>
+		<grouplist>
+			<groupid>base-x</groupid>
+			<groupid>core</groupid>
+			<groupid>fonts</groupid>
+			<groupid>gnome</groupid>
+			<groupid>graphical-internet</groupid>
+			<groupid>multimedia</groupid>
+			<groupid>printing</groupid>
+			<groupid>standard</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>development</groupid>
+			<groupid>japanese-support</groupid>
+			<groupid>korean-support</groupid>
+			<groupid>vietnamese-support</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>xfce-environment</id>
+		<name>Xfce Desktop</_name>
+		<description>A lightweight desktop environment that works well on low end machines.</description>
+		<display_order>3</display_order>
+		<grouplist>
+			<groupid>base-x</groupid>
+			<groupid>core</groupid>
+			<groupid>fonts</groupid>
+			<groupid>graphical-internet</groupid>
+			<groupid>multimedia</groupid>
+			<groupid>printing</groupid>
+			<groupid>standard</groupid>
+			<groupid>xfce</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>development</groupid>
+			<groupid>japanese-support</groupid>
+			<groupid>korean-support</groupid>
+			<groupid>vietnamese-support</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>mate-environment</id>
+		<name>MATE Desktop</_name>
+		<description>MATE Desktop is based on GNOME 2 and provides a powerful graphical user interface for users who seek a simple easy to use traditional desktop interface.</description>
+		<display_order>4</display_order>
+		<grouplist>
+			<groupid>base-x</groupid>
+			<groupid>core</groupid>
+			<groupid>fonts</groupid>
+			<groupid>graphical-internet</groupid>
+			<groupid>mate</groupid>
+			<groupid>multimedia</groupid>
+			<groupid>printing</groupid>
+			<groupid>standard</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>development</groupid>
+			<groupid>japanese-support</groupid>
+			<groupid>korean-support</groupid>
+			<groupid>vietnamese-support</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>suckless-environment</id>
+		<name>Suckless Desktop</_name>
+		<description>Minimal DWM desktop, no bloat.</description>
+		<display_order>5</display_order>
+		<grouplist>
+			<groupid>base-x</groupid>
+			<groupid>core</groupid>
+			<groupid>suckless-desktop</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>development</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>server-environment</id>
+		<name>Server</_name>
+		<description>An integrated environment for managing servers.</description>
+		<display_order>6</display_order>
+		<grouplist>
+			<groupid>core</groupid>
+			<groupid>database</groupid>
+			<groupid>dns-server</groupid>
+			<groupid>standard</groupid>
+			<groupid>web-server</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>base-x</groupid>
+			<groupid>development</groupid>
+			<groupid>fonts</groupid>
+			<groupid>gnome</groupid>
+			<groupid>graphical-internet</groupid>
+			<groupid>japanese-support</groupid>
+			<groupid>mate</groupid>
+			<groupid>multimedia</groupid>
+			<groupid>printing</groupid>
+			<groupid>korean-support</groupid>
+			<groupid>vietnamese-support</groupid>
+			<groupid>virtualization</groupid>
+			<groupid>xfce</groupid>
+		</optionlist>
+	</environment>
+	<environment>
+		<id>security-environment</id>
+		<name>Security Lab</_name>
+		<description>Tools for security auditing, forensics, system rescue, and teaching security testing methodologies.</description>
+		<display_order>7</display_order>
+		<grouplist>
+			<groupid>core</groupid>
+			<groupid>security-lab</groupid>
+			<groupid>standard</groupid>
+		</grouplist>
+		<optionlist>
+			<groupid>base-x</groupid>
+			<groupid>development</groupid>
+			<groupid>fonts</groupid>
+			<groupid>gnome</groupid>
+			<groupid>graphical-internet</groupid>
+			<groupid>japanese-support</groupid>
+			<groupid>mate</groupid>
+			<groupid>multimedia</groupid>
+			<groupid>printing</groupid>
+			<groupid>korean-support</groupid>
+			<groupid>vietnamese-support</groupid>
+			<groupid>xfce</groupid>
+		</optionlist>
+	</environment>
 </comps>
